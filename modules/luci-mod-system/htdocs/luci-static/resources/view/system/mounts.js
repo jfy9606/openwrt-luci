@@ -155,6 +155,10 @@ return view.extend({
 		o.onclick = this.handleMountAll.bind(this, m);
 		o.inputstyle = 'reload';
 
+		o = s.option(form.Flag, 'port_mount', _('Port-based Anonymous Mount'), _('Mount filesystems not specifically configured, mount point based on connected port'));
+		o.default = o.enabled;
+		o.rmempty = false;
+
 		o = s.option(form.Flag, 'anon_swap', _('Anonymous Swap'), _('Mount swap not specifically configured'));
 		o.default = o.disabled;
 		o.rmempty = false;
@@ -175,6 +179,11 @@ return view.extend({
 		o.default = o.disabled;
 		o.rmempty = false;
 
+		o = s.option(form.Value, 'essential_timeout', _('Essential mount point timeout'), _('Timeout for all "Essential mount point" (in seconds, default 5s)'));
+        o.datatype = 'and(uinteger,max(60))';
+		o.value("5");
+		o.value("10");
+		o.value("30");
 
 		// Mount status table
 		o = s.option(form.DummyValue, '_mtab');
@@ -291,10 +300,10 @@ return view.extend({
 		}
 
 		o = s.taboption('general', form.Value, 'target', _('Mount point'), _('Specifies the directory the device is attached to'));
-		o.value('/', _('Use as root filesystem (/)'));
-		o.value('/overlay', _('Use as external overlay (/overlay)'));
+		// o.value('/', _('Use as root filesystem (/)'));
+		o.value('/overlay', _('Use as sandbox (/overlay)'));
 		o.rmempty = false;
-
+		/*
 		o = s.taboption('general', form.DummyValue, '__notice', _('Root preparation'));
 		o.depends('target', '/');
 		o.modalonly = true;
@@ -311,7 +320,7 @@ return view.extend({
 				'umount /tmp/extroot\n' +
 			'</pre>'
 		;
-
+		*/
 		o = s.taboption('advanced', form.ListValue, 'fstype', _('Filesystem'));
 
 		o.textvalue = function(section_id) {
@@ -333,6 +342,7 @@ return view.extend({
 		o.textvalue = function(section_id) { return this.cfgvalue(section_id) || 'defaults' };
 		o.placeholder = 'defaults';
 
+		s.taboption('advanced', form.Flag, 'essential', _('Essential mount point'), _('Wait for this mount point ready before running other applications (set timeout in "Global Settings")'));
 
 		// Swaps
 		s = m.section(form.GridSection, 'swap', _('SWAP'), _('If your physical memory is insufficient unused data can be temporarily swapped to a swap-device resulting in a higher amount of usable <abbr title="Random Access Memory">RAM</abbr>. Be aware that swapping data is a very slow process as the swap-device cannot be accessed with the high datarates of the <abbr title="Random Access Memory">RAM</abbr>.'));

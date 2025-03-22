@@ -3257,13 +3257,10 @@ const UIMenu = baseclass.singleton(/** @lends LuCI.ui.menu.prototype */ {
 	 * Returns a promise resolving to the root element of the menu tree.
 	 */
 	load() {
-		if (this.menu == null)
-			this.menu = session.getLocalData('menu');
 
 		if (!L.isObject(this.menu)) {
 			this.menu = request.get(L.url('admin/menu')).then(L.bind((menu) => {
 				this.menu = scrubMenu(menu.json());
-				session.setLocalData('menu', this.menu);
 
 				return this.menu;
 			}, this));
@@ -4510,7 +4507,14 @@ const UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 	 * default.
 	 */
 	awaitReconnect(...hosts) {
-		const ipaddrs = hosts.length ? hosts : [ window.location.host ];
+		let ipaddrs = hosts.length ? Array.prototype.slice.call(hosts) : [ window.location.host ];
+		let deduplicated = [];
+		ipaddrs.forEach(function(e){
+			if (deduplicated.indexOf(e) == -1) {
+				deduplicated.push(e);
+			}
+		});
+		ipaddrs = deduplicated;
 
 		window.setTimeout(L.bind(() => {
 			poll.add(L.bind(() => {
@@ -4852,8 +4856,12 @@ const UI = baseclass.extend(/** @lends LuCI.ui.prototype */ {
 
 			tick();
 
+			let apply_holdoff = L.env.apply_holdoff;
+			if (UI.prototype.changes.changes && UI.prototype.changes.changes.network) {
+				apply_holdoff = Math.max(apply_holdoff, 6)
+			}
 			/* wait a few seconds for the settings to become effective */
-			window.setTimeout(call.bind(null, { status: 0 }), L.env.apply_holdoff * 1000);
+			window.setTimeout(call.bind(null, { status: 0 }), apply_holdoff * 1000);
 		},
 
 		/**
