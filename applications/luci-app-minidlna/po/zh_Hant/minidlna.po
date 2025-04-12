@@ -152,7 +152,7 @@ msgstr "允許（透過符號連結）提供媒體根目錄之外的內容。"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:90
 msgid ""
-"Set this to enable inotify monitoring to automatically discover new files."
+"Set this to enable inotify monitoring to discover new files automatically."
 msgstr "設定啟用 inotify 監控，自動發現新的檔案。"
 
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:92
@@ -230,14 +230,3 @@ msgstr "miniDLNA 狀態"
 #: applications/luci-app-minidlna/htdocs/luci-static/resources/view/minidlna.js:112
 msgid "miniSSDP socket"
 msgstr "迷你SSDP插槽"
-
-#~ msgid "Log directory"
-#~ msgstr "日誌目錄"
-
-#~ msgid ""
-#~ "Set this if you would like to specify the directory where you want "
-#~ "MiniDLNA to store its log file."
-#~ msgstr "設定 MiniDLNA 日誌目錄."
-
-#~ msgid "Collecting data..."
-#~ msgstr "收集資料中..."

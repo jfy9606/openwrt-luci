@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"PO-Revision-Date: 2024-10-17 17:10+0000\n"
-"Last-Translator: Andrew <stanol777@gmail.com>\n"
+"PO-Revision-Date: 2025-01-13 06:59+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/openwrt/"
 "luciapplicationsfirewall/uk/>\n"
 "Language: uk\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-rc\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:48
 msgid ""
@@ -53,11 +53,11 @@ msgstr "-- додати MAC-адресу --"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:199
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:182
 msgid "1024"
-msgstr ""
+msgstr "1024"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:118
 msgid ""
@@ -177,13 +177,15 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:107
 msgid "Address family, Internal IP address must match"
-msgstr ""
+msgstr "Сімейство адрес, внутрішня IP-адреса має збігатися"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:135
 msgid ""
 "Address family, source address, destination address, rewrite IP address must "
 "match"
 msgstr ""
+"Сімейство адрес, адреса джерела, адреса призначення, IP-адреса перезапису "
+"мають збігатися"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:162
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:183
@@ -250,7 +252,7 @@ msgstr ""
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:61
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:62
 msgid "Comment"
-msgstr ""
+msgstr "коментар"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:115
 msgid "Conntrack Settings"
@@ -274,7 +276,7 @@ msgstr "Продовжити"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:204
 msgid "Counters"
-msgstr ""
+msgstr "Лічильники"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:231
 msgid "Covered devices"
@@ -370,12 +372,16 @@ msgid ""
 "outbound traffic on this zone. This is typically enabled on the <em>wan</em> "
 "zone."
 msgstr ""
+"Увімкніть трансляцію мережевих адрес і портів IPv4 (NAT4 або NAPT4) для "
+"вихідного трафіку в цій зоні. Зазвичай це ввімкнено в зоні <em>wan</em>."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:243
 msgid ""
 "Enable network address and port translation IPv6 (NAT6 or NAPT6) for "
 "outbound traffic on this zone."
 msgstr ""
+"Увімкніть трансляцію мережевих адрес і портів IPv6 (NAT6 або NAPT6) для "
+"вихідного трафіку в цій зоні."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:211
 msgid "Enabled"
@@ -383,7 +389,7 @@ msgstr "Увімкнено"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:205
 msgid "Enables packet and byte count tracking for the set."
-msgstr ""
+msgstr "Вмикає відстеження кількості пакетів і байтів для набору."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:339
 msgid "Expecting: %s"
@@ -423,7 +429,7 @@ msgstr "Додаткові аргументи для джерела"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:67
 msgid "Family"
-msgstr ""
+msgstr "Сім'я"
 
 #: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:3
 msgid "Firewall"
@@ -435,7 +441,7 @@ msgstr "Брандмауер — Настроювані правила"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:20
 msgid "Firewall - IP sets"
-msgstr ""
+msgstr "Брандмауер - набори IP"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:172
 msgid "Firewall - NAT Rules"
@@ -459,7 +465,7 @@ msgstr "Переміщення конфігурації брандмауера"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:82
 msgid "Flow offloading type"
-msgstr ""
+msgstr "Тип розвантаження потоку"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:64
 msgid "Forward"
@@ -474,6 +480,12 @@ msgid ""
 "tooltip=\"Mask fwmark value with %{mark.mask} before compare.\"}}>%{mark.val}"
 "</var>}"
 msgstr ""
+"Перенаправлено %{ipv6?%{ipv4?<var>IPv4</var> і <var>IPv6</var>:<var>IPv6</"
+"var>}:<var>IPv4</var>}%{proto? , протокол %{proto#%{next?, }<var>%{item.name}"
+"</var>}}%{mark?, позначка <var%{mark.inv? data-tooltip=\"Збіг fwmarks крім "
+"%{mark.num}%{mark.mask? з маскою %{mark.mask}}.\":%{mark.mask? data-"
+"tooltip=\"Маскувати значення fwmark за допомогою %{mark.mask} перед "
+"порівнянням.\"}}>%{mark.val}</var>}"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:485
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:358
@@ -548,7 +560,7 @@ msgstr "Надати доступ до конфігурування брандм
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:85
 msgid "Hardware based offloading for routing with/without NAT."
-msgstr ""
+msgstr "Апаратне розвантаження для маршрутизації з/без NAT."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:85
 msgid "Hardware flow offloading"
@@ -556,24 +568,24 @@ msgstr "Апаратні засоби розвантаження потоку"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:144
 msgid "IP (range)"
-msgstr ""
+msgstr "IP (діапазон)"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:32
 #: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:53
 msgid "IP Sets"
-msgstr ""
+msgstr "Набори IP"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:152
 msgid "IPs/Networks"
-msgstr ""
+msgstr "IP/Мережі"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:107
 msgid "IPs/Networks/MACs"
-msgstr ""
+msgstr "IP-адреси/мережі/MAC-адреси"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:68
 msgid "IPv4"
-msgstr ""
+msgstr "IPv4"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:191
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:280
@@ -591,11 +603,11 @@ msgstr "Лише IPv4"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:69
 msgid "IPv6"
-msgstr ""
+msgstr "IPv6"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:242
 msgid "IPv6 Masquerading"
-msgstr ""
+msgstr "Маскування IPv6"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:193
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:282
@@ -610,7 +622,7 @@ msgstr "Вхідний пристрій"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:187
 msgid "Include File"
-msgstr ""
+msgstr "Включити файл"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:40
 msgid ""
@@ -625,10 +637,21 @@ msgid ""
 "any helper except &quot;%{helper.name}&quot;\">%{helper.val}</var>:<var data-"
 "tooltip=\"%{helper.name}\">%{helper.val}</var>}}"
 msgstr ""
+"Вхідні %{ipv6?%{ipv4?<var>IPv4</var> та <var>IPv6</var>:<var>IPv6</var>}:"
+"<var>IPv4</var>}%{proto? , протокол %{proto#%{next?, }%{item.types?<var "
+"class=\"cbi-tooltip-container\">%{item.name}<span class=\"cbi-tooltip\">ICMP "
+"із типами %{item.types#%{next?, }<var>%{item}</var>}</span></var>:"
+"<var>%{item .name}</var>}}}%{mark?, mark <var%{mark.inv? data-tooltip=\"Збіг "
+"fwmarks крім %{mark.num}%{mark.mask? з маскою %{mark.mask}}.\":%{mark.mask? "
+"data-tooltip=\"Маскувати значення fwmark за допомогою %{mark.mask} перед "
+"порівнянням.\"}}>%{mark.val}</var>}%{helper?, helper %{helper.inv?<var data-"
+"tooltip =\"Збігається з будь-яким помічником, крім \"%{helper."
+"name}\"\">%{helper.val}</var>:<var data-tooltip=\"%{helper.name}\">%{helper."
+"val}</var>}}"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:180
 msgid "Initial Hash Size"
-msgstr ""
+msgstr "Початковий розмір хешу"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:62
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:151
@@ -649,7 +672,7 @@ msgstr "Внутрішня зона"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:153
 msgid "Intra zone forward"
-msgstr ""
+msgstr "Внутрішньозонний нападник"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:305
 msgid "Invalid DSCP mark"
@@ -661,7 +684,7 @@ msgstr "Неприпустиме значення обмеження"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:47
 msgid "Invalid set name"
-msgstr ""
+msgstr "Недійсна назва набору"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:383
 msgid "Limit burst"
@@ -792,11 +815,11 @@ msgstr "Зіставляти трафік із вказаною позначко
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:113
 msgid "Max Entries"
-msgstr ""
+msgstr "Максимальна кількість записів"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:172
 msgid "Max Length"
-msgstr ""
+msgstr "Максимальна довжина"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:384
 msgid ""
@@ -841,11 +864,11 @@ msgstr "Назва"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:166
 msgid "Netmask"
-msgstr ""
+msgstr "Маска мережі"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:83
 msgid "None"
-msgstr ""
+msgstr "Жодного"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:77
 msgid "Not fully compatible with QoS/SQM."
@@ -887,7 +910,7 @@ msgstr "Вихідний трафік"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:75
 msgid "Packet Field Match"
-msgstr ""
+msgstr "Збіг полів пакета"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:76
 msgid ""
@@ -896,6 +919,11 @@ msgid ""
 "Datatypes: <code>ip, port, mac, net, set</code>.<br />Direction prefixes are "
 "optional.<br />*Note: datatype <code>set</code> is unsupported in fw4."
 msgstr ""
+"Поля пакета для відповідності.<br />Синтаксис: <em>direction_datatype</em>. "
+"наприклад: <code>src_port, dest_net</code>.<br />Напрямки: <code>src, dst</"
+"code>. Типи даних: <code>ip, port, mac, net, set</code>.<br />Префікси "
+"напрямків необов’язкові.<br />*Примітка: тип даних <code>set</code> не "
+"підтримується у fw4."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:350
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:471
@@ -920,7 +948,7 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:188
 msgid "Path to file of CIDRs, subnets, host IPs, etc.<br />"
-msgstr ""
+msgstr "Шлях до файлу CIDR, підмереж, IP-адрес хостів тощо<br />"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:155
 #: applications/luci-app-firewall/root/usr/share/luci/menu.d/luci-app-firewall.json:26
@@ -937,7 +965,7 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:158
 msgid "Port range"
-msgstr ""
+msgstr "Діапазон портів"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:237
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:289
@@ -957,11 +985,11 @@ msgstr "Переспрямувати відповідний вхідний тр�
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:122
 msgid "Refer To External Set"
-msgstr ""
+msgstr "Зверніться до зовнішнього набору"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:320
 msgid "Reflection zones"
-msgstr ""
+msgstr "Зони відбиття"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:85
 msgid "Requires hardware NAT support."
@@ -1027,7 +1055,7 @@ msgstr ""
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:84
 msgid "Software based offloading for routing/NAT."
-msgstr ""
+msgstr "Програмне розвантаження для маршрутизації/NAT."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:84
 msgid "Software flow offloading"
@@ -1096,7 +1124,7 @@ msgstr "Час зупинки (гг:хх:сс)"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:130
 msgid "Storage Method"
-msgstr ""
+msgstr "Спосіб зберігання"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:480
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:353
@@ -1247,6 +1275,8 @@ msgid ""
 "Unit: seconds. Default <code>0</code> means the entry is added permanently "
 "to the set.<br />Max: 2147483 seconds."
 msgstr ""
+"Одиниця: секунди. За замовчуванням <code>0</code> означає, що запис "
+"додається назавжди до набору.<br />Макс.: 2147483 секунди."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:341
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:461
@@ -1271,7 +1301,7 @@ msgstr "Правило без назви"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:57
 msgid "Unnamed set"
-msgstr ""
+msgstr "Безіменний набір"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:130
 msgid "Unnamed zone"
@@ -1303,7 +1333,7 @@ msgstr "Використовувати внутрішню IP-адресу"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:378
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:322
 msgid "Use ipset"
-msgstr ""
+msgstr "Використовуйте ipset"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:231
 msgid ""
@@ -1345,11 +1375,11 @@ msgstr "XOR позначки"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:28
 msgid "Your device does not run firewall4."
-msgstr ""
+msgstr "На вашому пристрої не працює firewall4."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:26
 msgid "Your device runs firewall4."
-msgstr ""
+msgstr "На вашому пристрої працює firewall4."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:143
 msgid "Zone ⇒ Forwards"
@@ -1364,6 +1394,8 @@ msgid ""
 "Zones from which reflection rules shall be created. If unset, only the "
 "destination zone is used."
 msgstr ""
+"Зони, з яких створюються правила відображення. Якщо не встановлено, "
+"використовується лише зона призначення."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:415
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:70
@@ -1397,7 +1429,7 @@ msgstr "будь-якої зони"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:298
 msgid "any/all"
-msgstr ""
+msgstr "будь-які/всі"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:419
 msgid "apply firewall mark"
@@ -1410,15 +1442,15 @@ msgstr "призначити помічника відслідковування
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:194
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:222
 msgid "automatic"
-msgstr ""
+msgstr "автоматичний"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:131
 msgid "bitmap"
-msgstr ""
+msgstr "растрове зображення"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:137
 msgid "bitmap is ipv4 only"
-msgstr ""
+msgstr "bitmap лише ipv4"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:72
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:89
@@ -1428,23 +1460,23 @@ msgstr "день"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:93
 msgid "dest_ip: Destination IP"
-msgstr ""
+msgstr "dest_ip: IP призначення"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:95
 msgid "dest_mac: Destination MAC addr"
-msgstr ""
+msgstr "dest_mac: MAC-адреса призначення"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:96
 msgid "dest_net: Destination (sub)net"
-msgstr ""
+msgstr "dest_net: цільова (під)мережа"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:94
 msgid "dest_port: Destination Port"
-msgstr ""
+msgstr "dest_port: Порт призначення"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:98
 msgid "dest_set: Destination ipset*"
-msgstr ""
+msgstr "dest_set: ipset призначення*"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/snats.js:315
 msgid "do not rewrite"
@@ -1466,14 +1498,18 @@ msgid ""
 "large address lists without the need to create one rule per item to match. "
 "Port ranges in ipsets are unsupported by firewall4.<br />"
 msgstr ""
+"firewall4 підтримує посилання та створення наборів IP для спрощення "
+"зіставлення великих списків адрес без необхідності створення одного правила "
+"для кожного елемента для збігу. Діапазони портів в ipsets не підтримуються "
+"firewall4.<br />"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:159
 msgid "fromport-toport"
-msgstr ""
+msgstr "зпорту-допорту"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:132
 msgid "hash"
-msgstr ""
+msgstr "хеш"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:72
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:89
@@ -1483,31 +1519,28 @@ msgstr "година"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:81
 msgid "ip: IP addr"
-msgstr ""
+msgstr "ip: IP-адреса"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:153
 msgid "ip[/cidr]<br />"
-msgstr ""
+msgstr "ip[/cidr]<br />"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:145
 msgid "ip[/cidr]<br />For use with Match datatypes: <code>*_ip</code>."
 msgstr ""
-
-#: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:70
-msgid "ipv4"
-msgstr ""
+"ip[/cidr]<br />Для використання з типами даних Match: <code>*_ip</code>."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:133
 msgid "list"
-msgstr ""
+msgstr "список"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:83
 msgid "mac: MAC addr"
-msgstr ""
+msgstr "mac: MAC-адреса"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:108
 msgid "macaddr|ip[/cidr]<br />"
-msgstr ""
+msgstr "macaddr|ip[/cidr]<br />"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:72
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:89
@@ -1517,11 +1550,11 @@ msgstr "хвилина"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:84
 msgid "net: (sub)net"
-msgstr ""
+msgstr "net: (sub)net"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:82
 msgid "port: Port"
-msgstr ""
+msgstr "порт: Порт"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/rules.js:416
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/zones.js:68
@@ -1537,27 +1570,27 @@ msgstr "секунду"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:86
 msgid "set: ipset*"
-msgstr ""
+msgstr "встановити: ipset*"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:92
 msgid "src_Set: Source ipset*"
-msgstr ""
+msgstr "src_Set: вихідний ipset*"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:87
 msgid "src_ip: Source IP"
-msgstr ""
+msgstr "src_ip: IP джерела"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:89
 msgid "src_mac: Source MAC addr"
-msgstr ""
+msgstr "src_mac: MAC-адреса джерела"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:90
 msgid "src_net: Source (sub)net"
-msgstr ""
+msgstr "src_net: вихідна (під)мережа"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:88
 msgid "src_port: Source Port"
-msgstr ""
+msgstr "src_port: порт джерела"
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:53
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/forwards.js:62
@@ -1585,47 +1618,8 @@ msgstr "невизначено"
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:114
 #: applications/luci-app-firewall/htdocs/luci-static/resources/view/firewall/ipsets.js:173
 msgid "up to 65536 entries."
-msgstr ""
+msgstr "до 65536 записів."
 
 #: applications/luci-app-firewall/htdocs/luci-static/resources/tools/firewall.js:339
 msgid "valid firewall mark"
 msgstr "дійсна позначка брандмауера"
-
-#~ msgid "Software based offloading for routing/NAT"
-#~ msgstr "Програмне розвантаження для маршрутизації/NAT"
-
-#~ msgid ""
-#~ "Forwarded IPv4%{proto?, protocol %{proto#%{next?, }<var>%{item.name}</"
-#~ "var>}}%{mark?, mark <var%{mark.inv? data-tooltip=\"Match fwmarks except "
-#~ "%{mark.num}%{mark.mask? with mask %{mark.mask}}.\":%{mark.mask? data-"
-#~ "tooltip=\"Mask fwmark value with %{mark.mask} before compare.\"}}>%{mark."
-#~ "val}</var>}"
-#~ msgstr ""
-#~ "Переспрямовування IPv4%{proto?, протокол %{proto#%{next?, }<var>%{item."
-#~ "name}</var>}}%{mark?, позначка <var%{mark.inv? data-tooltip=\"Зіставляння "
-#~ "fwmarks окрім %{mark.num}%{mark.mask? із маскою %{mark.mask}}.\":%{mark."
-#~ "mask? data-tooltip=\"Застосування маски %{mark.mask} до значення fwmark "
-#~ "перед зіставлянням\"}}>%{mark.val}</var>}"
-
-#~ msgid ""
-#~ "Incoming IPv4%{proto?, protocol %{proto#%{next?, }%{item.types?<var "
-#~ "class=\"cbi-tooltip-container\">%{item.name}<span class=\"cbi-"
-#~ "tooltip\">ICMP with types %{item.types#%{next?, }<var>%{item}</var>}</"
-#~ "span></var>:<var>%{item.name}</var>}}}%{mark?, mark <var%{mark.inv? data-"
-#~ "tooltip=\"Match fwmarks except %{mark.num}%{mark.mask? with mask %{mark."
-#~ "mask}}.\":%{mark.mask? data-tooltip=\"Mask fwmark value with %{mark.mask} "
-#~ "before compare.\"}}>%{mark.val}</var>}%{helper?, helper %{helper.inv?<var "
-#~ "data-tooltip=\"Match any helper except &quot;%{helper.name}&quot;"
-#~ "\">%{helper.val}</var>:<var data-tooltip=\"%{helper.name}\">%{helper.val}"
-#~ "</var>}}"
-#~ msgstr ""
-#~ "Вхідний IPv4%{proto?, протокол %{proto#%{next?, }%{item.types?<var "
-#~ "class=\"cbi-tooltip-container\">%{item.name}<span class=\"cbi-"
-#~ "tooltip\">ICMP із типами %{item.types#%{next?, }<var>%{item}</var>}</"
-#~ "span></var>:<var>%{item.name}</var>}}}%{mark?, позначка <var%{mark.inv? "
-#~ "data-tooltip=\"Зіставляння значення fwmarks окрім %{mark.num}%{mark.mask? "
-#~ "із маскою %{mark.mask}}.\":%{mark.mask? data-tooltip=\"Застосування маски "
-#~ "%{mark.mask} до значення fwmark перед зіставлянням.\"}}>%{mark.val}</"
-#~ "var>}%{helper?, помічник %{helper.inv?<var data-tooltip=\"Зіставляння "
-#~ "будь-якому помічнику оккрім &quot;%{helper.name}&quot;\">%{helper.val}</"
-#~ "var>:<var data-tooltip=\"%{helper.name}\">%{helper.val}</var>}}"
